@@ -12,7 +12,7 @@ class SaleDetailsTableSeeder extends Seeder
     public function run()
     {
         DB::table('sale_details')->insert([
-            'product_discount' => 5000,
+            'product_discount' => 0,
             'quantity' => 3,
             'sale_id' => 3,
             'product_id' => 1,
@@ -21,7 +21,7 @@ class SaleDetailsTableSeeder extends Seeder
         ]);
 
         DB::table('sale_details')->insert([
-            'product_discount' => 10000,
+            'product_discount' => 0,
             'quantity' => 3,
             'sale_id' => 3,
             'product_id' => 2,
@@ -30,7 +30,7 @@ class SaleDetailsTableSeeder extends Seeder
         ]);
 
         DB::table('sale_details')->insert([
-            'product_discount' => 5000,
+            'product_discount' => 0,
             'quantity' => 3,
             'sale_id' => 3,
             'product_id' => 3,
@@ -39,7 +39,7 @@ class SaleDetailsTableSeeder extends Seeder
         ]);
 
         DB::table('sale_details')->insert([
-            'product_discount' => 5000,
+            'product_discount' => 0,
             'quantity' => 3,
             'sale_id' => 3,
             'product_id' => 4,

@@ -20,14 +20,14 @@ class SalesTableSeeder extends Seeder
         ]);
         DB::table('sales')->insert([
             'sale_date' => now(),
-            'sale_discount' => 45000,
+            'sale_discount' => 5000,
             'user_id' => 1,
             'created_at' => now(),
             'updated_at' => now(),
         ]);
         DB::table('sales')->insert([
             'sale_date' => now(),
-            'sale_discount' => 15000,
+            'sale_discount' => 2000,
             'user_id' => 2,
             'created_at' => now(),
             'updated_at' => now(),

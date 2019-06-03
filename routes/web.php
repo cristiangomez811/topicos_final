@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('/','ProductController@index');
+
+Route::resource('sales', 'SaleController');
+Route::resource('products', 'ProductController');
+Route::post('sales/search', 'SaleController@search')->name('sales.search');
+
