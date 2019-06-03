@@ -58,6 +58,7 @@ class SaleController extends Controller
         $sale_details->quantity = $request->quantity;
         $sale_details->product_id = $request->product_id;
         $sale_details->sale_id = $sale->id;
+        $sale_details->save();
 
         return redirect('/sales');
     }
