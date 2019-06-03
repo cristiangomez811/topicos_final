@@ -12,10 +12,23 @@ class AddressesTableSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker;
         DB::table('addresses')->insert([
-            'home' => $faker->address,
+            'home' => 'Car 50 # 20 -10',
             'city_id' => 1,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        DB::table('addresses')->insert([
+            'home' => 'Cir 01 # 70 - 01',
+            'city_id' => 2,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+        DB::table('addresses')->insert([
+            'home' => 'Call 80 # 80 -10',
+            'city_id' => 3,
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
     }
 }
